@@ -28,6 +28,7 @@ services:
 
   grafana:
     image: grafana/grafana
+    restart: unless-stopped
     depends_on:
       - prometheus
     ports:
