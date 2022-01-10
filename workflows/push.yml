@@ -1,0 +1,14 @@
+name: Docker Compose Actions Workflow
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build the stack
+        run: docker-compose pull
+        run: docker-compose up -d
+        run: docker ps
+      - name: Test
+        run: while ! curl --retry 10 --retry-delay 5 -v http://0.0.0.0:9090 >/dev/null; do sleep 1; done
+        run: while ! curl --retry 10 --retry-delay 5 -v http://0.0.0.0:3030 >/dev/null; do sleep 1; done
