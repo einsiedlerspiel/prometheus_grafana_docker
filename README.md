@@ -1,3 +1,5 @@
+[![Docker Compose](https://github.com/einsiedlerspiel/prometheus_grafana_docker/actions/workflows/push.yml/badge.svg)](https://github.com/einsiedlerspiel/prometheus_grafana_docker/actions/workflows/push.yml)
+
 # A Docker Stack which sets up Prometheus and Grafana
 Here's a quick start to stand-up a Docker [Prometheus](http://prometheus.io/) stack containing Prometheus, Grafana.
 
