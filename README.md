@@ -1,4 +1,4 @@
-[![Docker Compose](https://github.com/einsiedlerspiel/prometheus_grafana_docker/actions/workflows/push.yml/badge.svg)](https://github.com/einsiedlerspiel/prometheus_grafana_docker/actions/workflows/push.yml)
+[![Docker Compose Actions Workflow](https://github.com/einsiedlerspiel/prometheus_grafana_docker/actions/workflows/push.yml/badge.svg)](https://github.com/einsiedlerspiel/prometheus_grafana_docker/actions/workflows/push.yml)
 
 # A Docker Stack which sets up Prometheus and Grafana
 Here's a quick start to stand-up a Docker [Prometheus](http://prometheus.io/) stack containing Prometheus, Grafana.
@@ -9,7 +9,7 @@ Before we get started installing the Prometheus stack. Ensure you install the la
 ## Installation
 Clone the project to your Docker host.
 
-If you would like to change which targets should be monitored or make configuration changes edit the [/prometheus/prometheus.yml](https://github.com/vegasbrianc/prometheus/blob/version-2/prometheus/prometheus.yml) file. The targets section is where you define what should be monitored by Prometheus. The names defined in this file are actually sourced from the service name in the docker-compose file. If you wish to change names of the services you can add the "container_name" parameter in the `docker-compose.yml` file.
+If you would like to change which targets should be monitored or make configuration changes edit the [/prometheus/prometheus.yml](https://github.com/einsiedlerspiel/prometheus_grafana_docker/blob/main/prometheus/prometheus.yml) file. The targets section is where you define what should be monitored by Prometheus. The names defined in this file are actually sourced from the service name in the docker-compose file. If you wish to change names of the services you can add the "container_name" parameter in the `docker-compose.yml` file.
 
 ## Configuration
 
